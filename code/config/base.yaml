@@ -20,7 +20,8 @@ baseline:
   level_of_cc: 0 # 0 - original number of cc / 1 - recommended / 2 - more control points
   seed: 0
   diffusion:
-    model: "runwayml/stable-diffusion-v1-5"
+    model: "/path/to/model_index.json" # example: /data/huggingface/models/runwayml/stable-diffusion-v1-5/models--runwayml--stable-diffusion-v1-5/snapshots/451f4fe16113bff5a5d2269ed5ad43b0592e9a14
+    # this change is for the situation that you can not directly use snapshot_download to download the model or your proxy server is not stable
     timesteps: 1000
     guidance_scale: 100
   loss:
